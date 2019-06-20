@@ -9,6 +9,7 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "cacheable-response": "^1.6.10",
     "express": "^4.17.1",
     "fontfaceobserver": "^2.1.0",
     "gray-matter": "^4.0.2",

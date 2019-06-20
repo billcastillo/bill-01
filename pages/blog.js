@@ -5,7 +5,6 @@ import BlogEntry from '../components/blog-entry'
 import style from '../styles/blog.scss'
 
 const Blog = props => (
-
 		<Page 
 			pageName="writing"
 			noNavigation={props.noNavigation}
