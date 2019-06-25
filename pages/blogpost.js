@@ -58,11 +58,7 @@ class BlogPost extends React.Component {
 							font-size: 64px;
 							font-weight: 400;
 							line-height: 1.2;
-							letter-spacing: -0.0250em;
 							margin-bottom: 64px;
-						}
-
-						.blog-wrapper code {
 						}
 
 						.blog-wrapper pre code {

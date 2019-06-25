@@ -61,8 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, a, span {
-	color: $grey-50;
+	color: $text-color;
 	font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: geometricprecision;
 }
 
 a { color: $color-link; }
@@ -79,10 +81,10 @@ article {
 	p {
 		font-size: 1em;
 		line-height: 1.85;
-		margin-bottom: 1.850em;
+		margin-bottom: 1.960em;
 
 		code {
-			font-size: 0.8lp50em;
+			font-size: 0.850em;
 			padding: 0.050em 0.250em;
 			background: $grey-10;
 			border-radius: 3px;
@@ -101,8 +103,11 @@ article {
 
 	/* Codes */
 	pre {
+		display: block;
 		border-radius: 8px;
 		margin-bottom: 1.610em;
+		max-height: 600px;
+		overflow: auto;
 		code {
 			font-size: 14px;
 			line-height: 24px;
