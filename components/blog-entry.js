@@ -3,15 +3,20 @@
  */
 
 import Link from 'next/link'
+import Router from 'next/router'
 import { kebabCase } from 'lodash'
+import { routeros } from 'react-syntax-highlighter/dist/styles/hljs';
 
 const BlogEntry = props => {
 	const { article } = props
 	const link = kebabCase(article.title)
 
 	return (
-		<Link as={`/blog/${link}`} href={`/blogpost/${link}`}>
-			<li className="blog-entry">
+		<Link as={`/writing/${link}`} href={`/blogpost/${link}`}>
+			<li className="blog-entry" onMouseEnter={() => {
+				Router.prefetch(`/blog/${link}`)
+				console.log('prefetching...')
+			}}>
 				<div className="blog-entry-left">
 					<p className="blog-entry-date">{article.date}</p>
 					<h4 className="blog-entry-title poppins">{article.title}</h4>

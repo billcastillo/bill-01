@@ -41,6 +41,7 @@ export default () => (
 				letter-spacing: 0.050em;
 				text-transform: uppercase;
 				text-decoration: none;
+				font-weight: 700;
 			}
 		`}</style>
 	</nav>
