@@ -30,14 +30,15 @@ app.prepare().then(() => {
   server.get('/writing/:title', (req, res) => {
     const actualPage = '/blogpost'
     const queryParams = { title: req.params.title }
-    console.log('req.params.title:', queryParams); 
+    console.log('req.params.title:', queryParams)
     app.render(req, res, actualPage, queryParams)
   })
 
   // server.get('/blogpost', (req, res) => {
   //   const actualPage = '/blogpost/:title'
+  //   console.log('req param;', req.params)
   //   const queryParams = { title: req.params.title }
-  //   console.log('req.params.title:', queryParams); 
+  //   console.log('req.params.title:', queryParams);
   //   app.render(req, res, actualPage, queryParams)
 	// })
 

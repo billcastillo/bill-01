@@ -13,9 +13,10 @@ import Container from '../formats/Container';
 
 class BlogPost extends React.Component {
 	static async getInitialProps(props) {
-		const { query } = props;
-		const content = await import(`../posts/${query.title}.md`);
-		const data =  matter(content.default);
+		const { query } = props
+		const content = await require(`../posts/basic-web-typography-guide.md`)
+		const data =  matter(content.default)
+		// console.log('data form blogpost:', data)
 		return data
 	}
 
@@ -24,7 +25,8 @@ class BlogPost extends React.Component {
 
 		return (
 			<>
-				<Head title="owo" />
+				{console.log('query??:', this.props)}
+				<Head title={data.title} />
 				<Navigation />
 
 				<Container>
