@@ -2,7 +2,7 @@ import React from 'react'
 import Page from '../components/Page'
 import articles from '../data/articles.json'
 import BlogEntry from '../components/blog-entry'
-import style from '../styles/blog.scss'
+import '../styles/blog.scss'
 
 const Blog = props => (
 		<Page 

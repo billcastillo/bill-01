@@ -1,12 +1,12 @@
 import React from 'react'
 import Projects from './projects'
-import Blog from './blog';
+import Blog from './blog'
 
 import About from '../components/about'
 import Head from '../components/head'
 import Header from '../components/Header';
 import Container from '../formats/Container'
-import PageLayout from '../formats/page-layout';
+import PageLayout from '../formats/page-layout'
 
 import articles from '../data/articles.json'
 import projects from '../data/projects.json'

@@ -4,7 +4,8 @@
     "dev": "node server.js",
     "build": "next build",
     "now-build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "export": "npm run build && next export"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -13,8 +14,8 @@
     "express": "^4.17.1",
     "fontfaceobserver": "^2.1.0",
     "gray-matter": "^4.0.2",
-    "lodash": "^4.17.11",
-    "next": "^8.1.0",
+    "lodash": "^4.17.14",
+    "next": "^9.0.7",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

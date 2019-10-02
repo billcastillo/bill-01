@@ -12,12 +12,8 @@ import Navigation from '../components/Navigation';
 import Container from '../formats/Container';
 
 class BlogPost extends React.Component {
-	static async getInitialProps(props) {
-		const { query } = props
-		const content = await require(`../posts/basic-web-typography-guide.md`)
-		const data =  matter(content.default)
-		// console.log('data form blogpost:', data)
-		return data
+	constructor(props) {
+		super(props)
 	}
 
 	render() {
@@ -25,7 +21,6 @@ class BlogPost extends React.Component {
 
 		return (
 			<>
-				{console.log('query??:', this.props)}
 				<Head title={data.title} />
 				<Navigation />
 
@@ -68,6 +63,15 @@ class BlogPost extends React.Component {
 				</Container>
 			</>
 		)
+	}
+
+	static async getInitialProps(props) {
+		const { query } = props
+		const content = await require(`../posts/${query.title}.md`)
+		const data =  matter(content.default)
+		console.log('data form blogpost:', data)
+		console.log('query:', query)
+		return data
 	}
 }
 

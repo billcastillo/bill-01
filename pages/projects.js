@@ -1,22 +1,26 @@
 import Link from 'next/link'
 import ProjectEntry from '../components/project-entry'
 import Page from '../components/Page'
+import projects from '../data/projects.json'
 
 const Projects = props => {
-	const { projects } = props
 
 	return (
 		<Page 
-		pageName="works"
-		noNavigation={props.noNavigation}
-		import={props.import}>
+			pageName="works"
+			noNavigation={props.noNavigation}
+			import={props.import}>
 
-			<div className="projects-wrapper">{
-				projects.map((project, index) => <ProjectEntry project={project} key={index} />)
-			}</div>
+				<div className="projects-wrapper">{
+					props.projects.map((item, index) => <ProjectEntry project={item} key={index} />)
+				}</div>
 
 		</Page>
 	)
+}
+
+Projects.getInitialProps = async ({ req }) => {
+  return { projects }
 }
 
 

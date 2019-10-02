@@ -17,10 +17,10 @@ const Page = props => (
 		<Container>
 
 			<section className={`section ${props.pageName}-section`}>
-			{
-				props.import
+			{ props.import
 					? <h2 className="section-title">{props.title ? props.title : props.pageName}</h2>
 					: <h1 className="section-title">{props.title ? props.title : props.pageName}</h1> }
+
 			{props.children}
 			</section>
 		</Container>

@@ -28,3 +28,4 @@
 
 ### Articles
 * Web typography - add topic about line-height, balance and whatnot
+* Color theory about pairing - how to create a palette

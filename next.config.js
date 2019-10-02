@@ -18,4 +18,14 @@ module.exports = withSass({
 
     return config
   },
+
+  // exportPathMap: async function(defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
+  //   return {
+  //     '/': { page: '/' },
+  //     '/blog': { page: '/blog' },
+  //     '/projects': { page: '/projects' },
+  //     '/writing/basic-web-typography-guide': { page: '/blogpost', query: { title: 'basic-web-typography-guide' } },
+  //     '/writing/how-to-host-your-site-for-free-using-github-pages': { page: '/blogpost', query: { title: 'how-to-host-your-site-for-free-using-github-pages' } }
+  //   };
+  // }
 });
