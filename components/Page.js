@@ -15,7 +15,6 @@ const Page = props => (
 		{ props.import ? '' : <Head title={capitalize(props.pageName)} /> }
 
 		<Container>
-
 			<section className={`section ${props.pageName}-section`}>
 			{ props.import
 					? <h2 className="section-title">{props.title ? props.title : props.pageName}</h2>

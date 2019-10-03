@@ -4,7 +4,6 @@ import Page from '../components/Page'
 import projects from '../data/projects.json'
 
 const Projects = props => {
-
 	return (
 		<Page 
 			pageName="works"
