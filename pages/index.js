@@ -20,7 +20,7 @@ const Contact = () => (
       <ul className="contact-links">
         {site.contactLinks.map((link, index) => {
           return (
-            <li key={index}><a href={link.link} title={link.name}>{link.name}</a></li>
+            <li key={index}><a rel="noopener" href={link.link} title={link.name}>{link.name}</a></li>
           )
         })}
       </ul>

@@ -1,5 +1,6 @@
 import React from 'react'
 import NextHead from 'next/head'
+import site from '../data/site.json'
 import { string } from 'prop-types'
 
 const defaultDescription = ''
@@ -9,10 +10,10 @@ const defaultOGImage = ''
 const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
-    <title>{props.title || ''}</title>
+    <title>{props.title || ''} | Bill Castillo</title>
     <meta
       name="description"
-      content={props.description || defaultDescription}
+      content={site.about || defaultDescription}
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
@@ -23,7 +24,7 @@ const Head = props => (
     <meta property="og:title" content={props.title || ''} />
     <meta
       property="og:description"
-      content={props.description || defaultDescription}
+      content={site.about || defaultDescription}
     />
     <meta name="twitter:site" content={props.url || defaultOGURL} />
     <meta name="twitter:card" content="summary_large_image" />

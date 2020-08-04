@@ -73,7 +73,15 @@ p, a, span {
 	text-rendering: geometricprecision;
 }
 
-a { color: $color-link; }
+a {
+	color: $color-link;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 h1 { font-size: 32px; }
 
 .poppins { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif; }

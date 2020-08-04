@@ -45,7 +45,7 @@ export default () => (
 			}
 
 			nav ul li a:hover {
-				color: #989af2;
+				color: #8587f0;
 			}
 
 			@media screen and (min-width: 545px) {
