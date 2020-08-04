@@ -12,7 +12,7 @@ const BlogEntry = props => {
 	const link = kebabCase(article.title)
 
 	return (
-		<Link href={`/writing/[title]`} as={`/writing/${link}`}>
+		<Link href={`/blog/[title]`} as={`/blog/${link}`}>
 			<li className="blog-entry" onMouseEnter={() => {
 				Router.prefetch(`/blog/${link}`)
 				console.log('prefetching...')
@@ -23,7 +23,7 @@ const BlogEntry = props => {
 					<p className="blog-entry-desc">{article.description}</p>
 				</div>
 				<div className="blog-entry-right">
-					<Link href={`/writing/[title]`} as={`/writing/${link}`}>
+					<Link href={`/blog/[title]`} as={`/blog/${link}`}>
 						<a className="read-more">Read more</a>
 					</Link>
 				</div>
@@ -33,6 +33,7 @@ const BlogEntry = props => {
 						position: relative;
 						display: flex;
 						justify-content: space-between;
+						flex-direction: column;
 						padding: 24px;
 						border: 1px solid hsl(193,30%,35%);
 						border-radius: 12px;
@@ -46,6 +47,7 @@ const BlogEntry = props => {
 
 					.blog-entry-left {
 						margin-right: 24px;
+						margin-bottom: 16px;
 					}
 
 					.blog-entry-right {
@@ -68,10 +70,10 @@ const BlogEntry = props => {
 					}
 
 					.blog-entry .blog-entry-desc {
-						font-size: 14px;
+						font-size: 16px;
 						color: hsl(193,30%,35%);
 						letter-spacing: 0;
-						line-height: 20px;
+						line-height: 24px;
 					}
 
 					.blog-entry .read-more {

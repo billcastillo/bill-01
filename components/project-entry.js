@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import { camelCase } from 'lodash'
 
-const ProjectEntry = props => {
-	
+const ProjectEntry = props => {	
 	const projectId = camelCase(props.project.name)
 	
 	return (
-		<div className="projects-tab" id={projectId}>
+		<div>
+		<a className="projects-tab" id={projectId} href={props.project.link} target="_blank">
 			<h4 className="projects-name poppins">{props.project.name}</h4>
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
 		
@@ -16,9 +16,10 @@ const ProjectEntry = props => {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
+					text-decoration: none;
 					border-radius: 12px;
-					padding: 28px 16px;
-					margin-bottom: 64px;
+					padding: 24px 16px;
+					margin-bottom: 38px;
 					box-shadow: 0 4px 4px rgba(0,0,0,0.350);
 					overflow: hidden;
 					transition: all 0.3s ease-in-out;
@@ -37,7 +38,9 @@ const ProjectEntry = props => {
 					z-index: -1;
 				}
 
-				.projects-tab:hover {
+				.projects-tab:hover,
+				.projects-tab:active,
+				.projects-tab:focus {
 					cursor: pointer;
 					box-shadow: 0 32px 24px rgba(0,0,0, 0.250)
 				}
@@ -60,7 +63,15 @@ const ProjectEntry = props => {
 					stroke: white;
 					transition: all 0.3s ease-in-out;
 				}
+
+				@media screen and (min-width: 545px) {
+					.projects-tab {
+						margin-bottom: 64px;
+						padding: 28px 16px;
+					}
+				}
 			`}</style>
+		</a>
 		</div>
 	)
 }

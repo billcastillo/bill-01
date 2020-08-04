@@ -17,8 +17,8 @@ const Page = props => (
 		<Container>
 			<section className={`section ${props.pageName}-section`}>
 			{ props.import
-					? <h2 className="section-title">{props.title ? props.title : props.pageName}</h2>
-					: <h1 className="section-title">{props.title ? props.title : props.pageName}</h1> }
+					? <h2 className="section-title poppins">{props.title ? props.title : props.pageName}</h2>
+					: <h1 className="section-title poppins">{props.title ? props.title : props.pageName}</h1> }
 
 			{props.children}
 			</section>
@@ -26,14 +26,20 @@ const Page = props => (
 
 		<style jsx>{`
 			.section {
-				margin-bottom: 128px;
+				margin-bottom: 96px;
 			}
 			
 			.section .section-title {
 				font-size: 32px;
 				line-height: 32px;
-				text-transform: capitalize;
+				text-transform: uppercase;
 				margin-bottom: 32px;
+			}
+
+			@media screen and (min-width: 545px) {
+				.section {
+					margin-bottom: 128px;
+				}
 			}
 		`}</style>
 	</PageLayout>

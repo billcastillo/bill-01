@@ -6,7 +6,7 @@ import projects from '../data/projects.json'
 const Projects = props => {
 	return (
 		<Page 
-			pageName="works"
+			pageName="work"
 			noNavigation={props.noNavigation}
 			import={props.import}>
 

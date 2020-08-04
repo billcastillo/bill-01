@@ -24,7 +24,7 @@ const About = () => (
 				position: relative;
 				display: flex;
 				align-items: center;
-				height: ${typeof window !== 'undefined' ? window.innerHeight * 0.80 + 'px' : '80vh'}
+				height: ${typeof window !== 'undefined' ? window.innerHeight * 0.60 + 'px' : '60vh'}
 			}
 
 			.about-section .about-bg {

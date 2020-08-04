@@ -20,7 +20,7 @@ export default () => (
 				position: relative;
 				width: 100%;
 				padding: 48px 0 60px 0;
-				text-align: right;
+				text-align: center;
 			}
 
 			nav ul {
@@ -42,6 +42,16 @@ export default () => (
 				text-transform: uppercase;
 				text-decoration: none;
 				font-weight: 700;
+			}
+
+			nav ul li a:hover {
+				color: #989af2;
+			}
+
+			@media screen and (min-width: 545px) {
+				nav {
+					text-align: right;
+				}
 			}
 		`}</style>
 	</nav>

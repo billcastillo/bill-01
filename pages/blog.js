@@ -6,7 +6,7 @@ import '../styles/blog.scss'
 
 const Blog = props => (
 	<Page 
-		pageName="writing"
+		pageName="articles"
 		noNavigation={props.noNavigation}
 		import={props.import}>
 
