@@ -31,6 +31,7 @@ const Work = props => {
 						display: flex;
 						flex-wrap: wrap;
 						justify-content: center;
+						align-items: flex-start; // safari fix
 						margin-bottom: 64px;
 					}
 

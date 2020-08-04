@@ -18,6 +18,7 @@ const ProjectEntry = props => {
 					align-items: center;
 					text-decoration: none;
 					border-radius: 12px;
+					-webkit-transform: translateZ(0); // safari fix
 					padding: 24px 16px;
 					margin-bottom: 40px;
 					box-shadow: 0 4px 4px rgba(0,0,0,0.350);
