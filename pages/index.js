@@ -1,16 +1,41 @@
 import React from 'react'
-import Projects from './projects'
+import Work from './work'
 import Blog from './blog'
-
-import About from '../components/about'
 import Head from '../components/head'
-import Header from '../components/Header';
+import Page from '../components/Page'
 import Container from '../formats/Container'
 import PageLayout from '../formats/page-layout'
 
 import articles from '../data/articles.json'
 import projects from '../data/projects.json'
 import site from '../data/site.json'
+
+const Contact = () => (
+  <Page
+    pageName="contact"
+    noNavigation={true}
+    import={true} >
+      <p className="contact-email">{site.contact}</p>
+
+      <ul className="contact-links">
+        {site.contactLinks.map((link, index) => {
+          return (
+            <li key={index}><a href={link.link} title={link.name}>{link.name}</a></li>
+          )
+        })}
+      </ul>
+
+      <style jsx>{`
+        .contact-email {
+          margin-bottom: 16px;
+        }
+
+        .contact-links li {
+          line-height: 24px;
+        }
+      `}</style>
+    </Page>
+)
 
 const Home = () => (
   <PageLayout class="index-wrapper">
@@ -30,8 +55,9 @@ const Home = () => (
     
 
     {/* <About noNavigation={true} import={true} /> */}
-    <Projects projects={projects} noNavigation={true} import={true} />
+    <Work projects={projects} noNavigation={true} import={true} />
     <Blog articles={articles} noNavigation={true} import={true} />
+    <Contact />
 
     <style jsx>{`
       .index-wrapper {

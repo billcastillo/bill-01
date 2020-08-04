@@ -6,12 +6,12 @@ const ProjectEntry = props => {
 	
 	return (
 		<div>
-		<a className="projects-tab" id={projectId} href={props.project.link} target="_blank">
-			<h4 className="projects-name poppins">{props.project.name}</h4>
+		<a className="work-tab" id={projectId} href={props.project.link} target="_blank">
+			<h4 className="work-name poppins">{props.project.name}</h4>
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
 		
 			<style jsx>{`
-				.projects-tab {
+				.work-tab {
 					position: relative;
 					display: flex;
 					justify-content: space-between;
@@ -19,13 +19,13 @@ const ProjectEntry = props => {
 					text-decoration: none;
 					border-radius: 12px;
 					padding: 24px 16px;
-					margin-bottom: 38px;
+					margin-bottom: 40px;
 					box-shadow: 0 4px 4px rgba(0,0,0,0.350);
 					overflow: hidden;
 					transition: all 0.3s ease-in-out;
 				}
 				
-				.projects-tab#${projectId}::before {
+				.work-tab#${projectId}::before {
 					position: absolute;
 					content: '';
 					width: 200%;
@@ -38,36 +38,42 @@ const ProjectEntry = props => {
 					z-index: -1;
 				}
 
-				.projects-tab:hover,
-				.projects-tab:active,
-				.projects-tab:focus {
+				.work-tab:hover,
+				.work-tab:active,
+				.work-tab:focus {
 					cursor: pointer;
 					box-shadow: 0 32px 24px rgba(0,0,0, 0.250)
 				}
 
-				.projects-tab:hover::before {
+				.work-tab:hover::before {
 					transform: translate3d(50%, 0, 0);
 				}
 
-				.projects-tab:hover svg {
+				.work-tab:hover svg {
 					transform: scale(1.50);
 				}
 
-				.projects-tab .projects-name {
-					font-size: 22px;
-					font-weight: 400;
+				.work-tab .work-name {
+					font-size: 18px;
+					font-weight: 700;
+					text-transform: uppercase;
+					letter-spacing: 0.0250em;
 					color: white;
 				}
 
-				.projects-tab svg {
+				.work-tab svg {
 					stroke: white;
 					transition: all 0.3s ease-in-out;
 				}
 
 				@media screen and (min-width: 545px) {
-					.projects-tab {
-						margin-bottom: 64px;
+					.work-tab {
+						margin-bottom: 48px;
 						padding: 28px 16px;
+					}
+
+					.work-tab .work-name {
+						font-size: 20px;
 					}
 				}
 			`}</style>
