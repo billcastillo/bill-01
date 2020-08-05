@@ -1,6 +1,6 @@
 ---
 title: I Saw ‘Dark Phoenix’ So You Don’t Have to
-date: 2018 Mar 24
+date: 2018 Mar 25
 author: Touko Peltomaa
 ---
 

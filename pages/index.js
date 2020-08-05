@@ -47,7 +47,7 @@ const Home = () => (
       <div className="about-bg"></div>
       <Container>
         <h1 className="title poppins">Bill Castillo</h1>
-        <h2 className="about-desc">
+        <h2 className="about-desc domine">
           {site.about}
         </h2>
       </Container>
@@ -105,10 +105,10 @@ const Home = () => (
 			}
 
 			.index-section .about-desc {
-				color: #504766;
         font-size: 24px;
-				line-height: 32px;
         font-weight: 400;
+				line-height: 32px;
+				color: #504766;
 				text-align: center;
       }
       

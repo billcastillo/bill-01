@@ -46,7 +46,9 @@ const ProjectEntry = props => {
 					box-shadow: 0 32px 24px rgba(0,0,0, 0.250)
 				}
 
-				.work-tab:hover::before {
+				.work-tab:hover::before,
+				.work-tab:active::before,
+				.work-tab:focus::before {
 					transform: translate3d(50%, 0, 0);
 				}
 

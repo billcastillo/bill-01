@@ -27,7 +27,7 @@ class BlogPost extends React.Component {
 				<Container>
 				<div className="blog-wrapper">
 					<p className="blog-date">{data.date}</p>
-					<h1 className="blog-title">{data.title}</h1>
+					<h1 className="blog-title domine">{data.title}</h1>
 
 					<article className="blog-post">
 						<Markdown source={content} escapeHtml={false} renderers={{code: CodeBlock}}/>
