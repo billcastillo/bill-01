@@ -1,29 +1,28 @@
-/* This component is the link for each blog post
- * Contains: title, date, link
+/*
+ * This component is the link for each blog post
+ * Contains: title, date, link, description
  */
 
 import Link from 'next/link'
 import Router from 'next/router'
-import { kebabCase } from 'lodash'
 import { routeros } from 'react-syntax-highlighter/dist/styles/hljs';
 
 const BlogEntry = props => {
-	const { article } = props
-	const link = kebabCase(article.title)
+	const { data } = props.article.document;
 
 	return (
-		<Link href={`/blog/[title]`} as={`/blog/${link}`}>
+		<Link href={`/blog/[title]`} as={`/blog/${props.article.slug}`}>
 			<li className="blog-entry" onMouseEnter={() => {
-				Router.prefetch(`/blog/${link}`)
+				Router.prefetch(`/blog/${props.article.slug}`)
 				console.log('prefetching...')
 			}}>
 				<div className="blog-entry-left">
-					<p className="blog-entry-date">{article.date}</p>
-					<h4 className="blog-entry-title poppins">{article.title}</h4>
-					<p className="blog-entry-desc">{article.description}</p>
+					<p className="blog-entry-date">{data.date}</p>
+					<h4 className="blog-entry-title poppins">{data.title}</h4>
+					<p className="blog-entry-desc">{data.description ? data.description : 'no desc'}</p>
 				</div>
 				<div className="blog-entry-right">
-					<Link href={`/blog/[title]`} as={`/blog/${link}`}>
+					<Link href={`/blog/[title]`} as={`/blog/${props.article.slug}`}>
 						<a className="read-more">Read more</a>
 					</Link>
 				</div>

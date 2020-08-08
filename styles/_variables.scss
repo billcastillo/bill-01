@@ -1,6 +1,7 @@
 $color-1: #FFEEDD;
 $color-2: #F2989A;
 $color-link: #8587f0;
+$color-info: transparentize($color-link, 0.80);
 
 $grey-10: #F5F6F5;
 $grey-20: #DEE0E0;
@@ -10,4 +11,13 @@ $grey-50: #2D4E57;
 
 $brand-color: #F2C398;
 $text-color: #262626;
+$sub-text-color: #464646;
 $header-color: #504766;
+
+$paragraph-margin: 1.960em;
+
+// Typfaces
+$font-default: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif;
+$font-poppins: 'Poppins', $font-default;
+$font-domine: 'Domine', $font-default;
+$font-mono: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;

@@ -8,7 +8,7 @@ const PageLayout = props => {
 	return (
 		<>
 			<div className={`wrapper ${props.class ? props.class : ''}`} id={`${props.id ? props.id : ''}`} >
-					{ props.noNavigation ? '' : <Navigation /> }
+					{ props.noNavigation ? '' : <Navigation homepage={props.homepage} /> }
 					{ props.children }
 			</div>
 		</>
