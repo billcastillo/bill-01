@@ -5,8 +5,8 @@ import Head from '../components/head'
 import Page from '../components/Page'
 import Container from '../formats/Container'
 import PageLayout from '../formats/page-layout'
+import BlogList from '../api/blog-list'
 
-import articles from '../data/articles.json'
 import projects from '../data/projects.json'
 import site from '../data/site.json'
 
@@ -31,17 +31,15 @@ const Contact = () => (
         }
 
         .contact-links li {
-          line-height: 24px;
+          line-height: 32px;
         }
       `}</style>
     </Page>
 )
 
-const Home = () => (
-  <PageLayout class="index-wrapper">
+const Home = props => (
+  <PageLayout class="index-wrapper" homepage={true}>
     <Head title="Home" />
-
-    {/* <Header /> */}
 
     <section className="section index-section">
       <div className="about-bg"></div>
@@ -52,11 +50,9 @@ const Home = () => (
         </h2>
       </Container>
     </section>
-    
 
-    {/* <About noNavigation={true} import={true} /> */}
     <Work projects={projects} noNavigation={true} import={true} />
-    <Blog articles={articles} noNavigation={true} import={true} />
+    <Blog posts={props.posts} noNavigation={true} import={true} />
     <Contact />
 
     <style jsx>{`
@@ -96,7 +92,7 @@ const Home = () => (
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background-image: url(../static/about_me_bg.png);
+				background-image: url(../static/about_me_bg.png?webp);
 				background-repeat: no-repeat;
 				background-size: auto 100%;
 				background-position: center center;
@@ -111,7 +107,7 @@ const Home = () => (
 				color: #504766;
 				text-align: center;
       }
-      
+
       @media screen and (min-width: 545px) {
         .index-section .about-desc {
           font-size: 32px;
@@ -119,9 +115,11 @@ const Home = () => (
         }
       }
     `}</style>
-
-    
   </PageLayout>
 )
+
+Home.getInitialProps = async () => {
+  return BlogList();
+}
 
 export default Home

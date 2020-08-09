@@ -49,8 +49,11 @@ table {
 	border-spacing: 0;
 }
 
-/* ################################
- * MAIN global styles            */
+/*
+ * ################################
+ * MAIN global styles
+ * ################################
+ */
 
 @import 'variables';
 
@@ -89,46 +92,4 @@ h1 { font-size: 32px; }
 
 .section {
 	margin-bottom: 128px;
-}
-
-article {
-	p {
-		font-size: 1em;
-		line-height: 1.85;
-		margin-bottom: 1.960em;
-
-		code {
-			font-size: 0.850em;
-			padding: 0.050em 0.250em;
-			background: $grey-10;
-			border-radius: 3px;
-			font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-		}
-	}
-
-	hr {
-		height: 2px;
-		background: $grey-50;
-		border-radius: 50%;
-		border: none;
-		width: 25%;
-		margin: 64px auto 80px auto;
-	}
-
-	/* Codes */
-	pre {
-		display: block;
-		border-radius: 8px;
-		margin-bottom: 1.610em;
-		max-height: 600px;
-		overflow: auto;
-		code {
-			font-size: 14px;
-			line-height: 24px;
-			span {
-				color: inherit;
-				font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-			}
-		}	
-	}
 }

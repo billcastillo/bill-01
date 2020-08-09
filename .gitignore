@@ -20,3 +20,4 @@ yarn-error.log*
 /others
 .vscode
 out/
+notes/

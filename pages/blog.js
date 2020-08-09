@@ -1,28 +1,30 @@
 import React from 'react'
 import Page from '../components/Page'
-import articles from '../data/articles.json'
 import BlogEntry from '../components/blog-entry'
+import BlogList from '../api/blog-list'
 import '../styles/blog.scss'
 
-const Blog = props => (
-	<Page 
-		pageName="articles"
-		noNavigation={props.noNavigation}
-		import={props.import}>
-
-			<ul className="blog-entry-wrapper">{
-					props.articles.map((article, index) => {
+class Blog extends React.Component {
+	static async getInitialProps() {
+		return BlogList();
+	}
+	
+	render() {
+		return (
+			<Page
+				pageName="articles"
+				noNavigation={this.props.noNavigation}
+				import={this.props.import}>
+				<ul className="blog-entry-wrapper">{
+					this.props.posts.map((article, index) => {
 						return (
 							<BlogEntry key={index} article={article} />
 						)
 					})
-			}</ul>
-
-	</Page>
-)
-
-Blog.getInitialProps = async ({ req }) => {
-  return { articles }
+				}</ul>
+			</Page>
+		)
+	}
 }
 
 export default Blog
