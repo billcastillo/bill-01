@@ -22,3 +22,5 @@ fields:
   config:
     required: true
   default: new blog post
+pages:
+- posts/test-post-from-forestry.md
