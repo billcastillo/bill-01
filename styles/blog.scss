@@ -63,9 +63,6 @@ article {
   }
   h2 {
     font-size: 28px;
-    ~ h3 {
-      margin-top: $paragraph-margin;
-    }
   }
   h3 {
     font-size: 24px;
@@ -87,10 +84,11 @@ article {
 
     code {
       font-size: 0.85em;
-      padding: 0.05em 0.25em;
-      background: $grey-10;
+      padding: 0.125em 0.25em;
+      background: #e5e6ef;
       border-radius: 3px;
       font-family: $font-mono;
+      white-space: pre-wrap;
     }
 
     em {
@@ -106,8 +104,9 @@ article {
     position: relative;
     display: inline;
     font-weight: 700;
-    color: $grey-50;
-    box-shadow: inset 0px -6px 0px 0px rgba(133, 135, 240, 0.4);
+    color: darken($color-link, 0%);
+    // text-decoration: underline;
+    box-shadow: inset 0px -4px 0px 0px $color-1;
     transition: all 0.1s ease-in-out;
 
     &::before {
@@ -127,7 +126,7 @@ article {
 
     &:hover {
       text-decoration: none;
-      box-shadow: inset 0px -0.8em 0px 0px rgba(133, 135, 240, 0.4);
+      box-shadow: inset 0px -0.8em 0px 0px $color-1;
 
       &::before {
         height: 60%;
@@ -177,6 +176,7 @@ article {
     code {
       font-size: 14px;
       line-height: 24px;
+      color: $sub-text-color;
       span {
         color: inherit;
         font-family: Consolas, Monaco, Lucida Console, Liberation Mono,

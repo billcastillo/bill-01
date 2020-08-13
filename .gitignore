@@ -21,3 +21,7 @@ yarn-error.log*
 .vscode
 out/
 notes/
+
+#others
+/.forestry
+/images
