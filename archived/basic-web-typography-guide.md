@@ -1,6 +1,6 @@
 ---
 title: Basic Web Typography
-date: 2018 Mar 25
+date: 2020-08-09
 author: Touko Peltomaa
 description: Learn the general concepts of web typography. Massively improve readability with just a few lines of CSS
 ---

@@ -1,5 +1,56 @@
 [
   {
+    "title": "Software",
+    "items": [
+      {
+        "item": "Editor",
+        "name": "Visual Studio Code",
+        "description": "Before it was Sublime 3, then IntelliJ but VS Code gave most of the things I needed for development."
+      },
+      {
+        "item": "File explorer",
+        "name": "Clover",
+        "description": "Because I prefer multiple tabs than multiple windows."
+      },
+      {
+        "item": "Terminal",
+        "name": "Hyper",
+        "description": "To be honest, there are better terminals out there but this one has a pikachu theme."
+      }
+    ]
+  },
+  {
+    "title": "Services",
+    "description": "I'm a sucker for free stuff. Am I just cheap? Probably. But the free plans are usually enough for me; most of the services listed here have a free plan.",
+    "items": [
+      {
+        "item": "Hosting",
+        "name": "zeit.co",
+        "description": "I used to host everyting on Github but I really like zeit's ssr, auto deploy stuff. I might move to netlify in the future."
+      },
+      {
+        "item": "Domain",
+        "name": "Namecheap",
+        "description": "I think the price are fair and sometimes there's a sale. Their dashboard is good too."
+      },
+      {
+        "item": "Writing",
+        "name": "Grammarly",
+        "description": "I'm not <em>that</em> good at English. Even if I am, I also make mistakes sometime. Grammarly has your back."
+      },
+      {
+        "item": "CMS",
+        "name": "Forestry.io",
+        "description": "Best for static site generators. You can make new posts on your phone!"
+      },
+      {
+        "item": "General web dev",
+        "name": "Frontend Focus",
+        "link": "https://frontendfoc.us/"
+      }
+    ]
+  },
+  {
     "title": "Hardware",
     "items": [
       {
@@ -22,41 +73,11 @@
         "description": "Not really necessary but I like to make things pretty.",
         "link": "https://drop.com/buy/tai-hao-paradise-pbt-keycap-set-massdrop-debut?utm_source=linkshare&referer=WRFPTF",
         "image": ""
-      }
-    ]
-  },
-  {
-    "title": "Software",
-    "items": [
-      {
-        "item": "Editor",
-        "name": "Visual Studio Code",
-        "description": "Before it was Sublime, then IntelliJ but VS Code gave most of the things I need for development."
       },
       {
-        "item": "File explorer",
-        "name": "Clover",
-        "description": "Because I prefer multiple tabs then multiple windows."
-      },
-      {
-        "item": "Terminal",
-        "name": "Hyper"
-      }
-    ]
-  },
-  {
-    "title": "Services",
-    "description": "I'm a sucker for free stuff. Am I just cheap? Probably. But the free plans are usually enough for me; most of the services listed here have a free plan.",
-    "items": [
-      {
-        "item": "Writing",
-        "name": "Grammarly",
-        "description": "I'm not <em>that</em> good at English. Even if I am, I also make mistakes sometime. Grammarly has your back."
-      },
-      {
-        "item": "General web dev",
-        "name": "Frontend Focus",
-        "link": "https://frontendfoc.us/"
+        "item": "Speakers",
+        "name": "KRK Rokit 5",
+        "description": "These are monitors by the way, not speakers. I turned them into my everyday speaker with just few eq adjustments. I used to have this hobby where I needed this kind of monitors."
       }
     ]
   }

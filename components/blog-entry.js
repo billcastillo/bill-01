@@ -67,7 +67,7 @@ const BlogEntry = (props) => {
 
           .blog-entry .blog-entry-title {
             font-size: 24px;
-            font-weight: 400;
+            font-weight: 300;
             line-height: 32px;
             color: #504766;
             padding-bottom: 8px;

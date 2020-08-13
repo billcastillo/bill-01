@@ -108,7 +108,7 @@ const Home = (props) => (
 
       .index-section .about-desc {
         font-size: 24px;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 32px;
         color: #504766;
         text-align: center;

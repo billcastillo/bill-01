@@ -1,6 +1,6 @@
 ---
 title: Create and publish your own website with free hosting using Github pages
-date: 2020 Aug 09
+date: 2020-08-09
 author: Touko Peltomaa
 description: Save money using this one simple trick! Web host servers hate this article.
 ---
@@ -46,9 +46,9 @@ On file creation, name your file as `index.html` and add this as content:
 </html>
 ```
 
-![Creating index.html][step-2-1]
-
 `index.html` is where you add the contents of your home page.
+
+![Creating index.html][step-2-1]
 
 Next, scroll down at the bottom and add a commit message. Commit messages should just be a short description of the changes you just made e.g. `added index.html`
 
@@ -56,7 +56,7 @@ Next, scroll down at the bottom and add a commit message. Commit messages should
 
 <div className="bordered success">
 
-#### Done! Your site is now available in __<username>.github.io__
+#### Done! Your site is now available in **<username\>.github.io**
 
 </div>
 
@@ -64,11 +64,7 @@ Next, scroll down at the bottom and add a commit message. Commit messages should
 
 If you've already added files via Github's GUI, you can skip this section and go to [Setting up custom domain](#4) section.
 
-<div className="note">
-
-Install [Git locally for Windows](https://git-scm.com/download/win) (preinstalled if you're using Mac)
-
-</div>
+For windows users: [install Git for Windows](https://git-scm.com/download/win) (preinstalled if you're using Mac)
 
 ### 3.1 Clone your repo locally
 
@@ -167,9 +163,13 @@ Push the code with `git push origin master`. Pushing is the actual _upload_ stuf
 git push origin master
 ```
 
+<div className="bordered success">
+
 #### Done! Your files should be uploaded to your repo
 
-Visit _username.github.io_ to see your site.
+Visit **<username.github.io\>** to see your site.
+
+</div>
 
 ---
 
@@ -179,9 +179,9 @@ To set up a custom domain, you have to own one or purchase it on a domain provid
 
 ### 4.1 Creating a CNAME record
 
-- Go to your repository settings
-- Scroll down to the **Github Pages** section
-- In the **Custom domain** area, enter your domain and click save.
+1. Go to your repository settings
+2. Scroll down to the **Github Pages** section
+3. In the **Custom domain** area, enter your domain and click save.
 
 ![Creating a CNAME][step-4-1]
 
