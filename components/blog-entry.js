@@ -99,6 +99,7 @@ const BlogEntry = (props) => {
 
             .blog-entry .blog-entry-title {
               font-size: 26px;
+              line-height: 36px;
             }
           }
         `}</style>

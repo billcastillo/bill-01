@@ -1,12 +1,12 @@
 import React from "react";
 import Page from "../components/Page";
-import BlogEntry from "../components/blog-entry";
+import uses from '../data/uses.json';
 import "../styles/uses.scss";
 
-const Uses = (props) => (
+const Uses = () => (
   <Page pageName='uses'>
     <p>I often</p>
-    <ul className='blog-entry-wrapper'>
+    <ul className='uses-list'>
       <li>list</li>
     </ul>
   </Page>

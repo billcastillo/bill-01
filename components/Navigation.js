@@ -7,6 +7,10 @@ const HomeTitle = () => (
 		<Link href="/"><a className="nav-link" title="Home">Bill Castillo</a></Link>
 
 		<style jsx>{`
+			.nav-title {
+				padding: 24px 0;
+			}
+
 			.nav-link {
 				color: #504766;
 				font-size: 16px;
@@ -43,8 +47,8 @@ const Navigation = props => (
 				display: block;
 				position: relative;
 				width: 100%;
-				padding: 24px 0;
-				margin-bottom: 96px;
+				padding: 0;
+				margin-bottom: 72px;
 				// padding: 48px 0 60px 0;
 				text-align: center;
 				background-color: #FFEEDD;
@@ -74,6 +78,7 @@ const Navigation = props => (
 
 			nav ul li {
 				display: inline-block;
+				padding: 24px 0;
 			}
 
 			nav ul li:not(:last-child) {

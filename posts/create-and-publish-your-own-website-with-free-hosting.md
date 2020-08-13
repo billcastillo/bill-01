@@ -13,12 +13,12 @@ This guide is for those who want to create their site, portfolio, blog, or alrea
 
 After logging in, [create a new repository](https://github.new/ "Create a new repository").
 
-![Create a new repository][step-1]
-
 #### Important Notes:
 
 - Repository name should be _username_.github.io where _username_ is your username
-- Check _Initialize this repository with a README_
+- Check "Initialize this repository with a README"
+
+![Create a new repository][step-1]
 
 ## <a name="2"></a> 2. Adding files
 
@@ -46,13 +46,19 @@ On file creation, name your file as `index.html` and add this as content:
 </html>
 ```
 
+![Creating index.html][step-2-1]
+
 `index.html` is where you add the contents of your home page.
 
 Next, scroll down at the bottom and add a commit message. Commit messages should just be a short description of the changes you just made e.g. `added index.html`
 
-#### Done!
+![Committing index.html][step-2-2]
 
-Your site is now available in _username.github.io_
+<div className="bordered success">
+
+#### Done! Your site is now available in __<username>.github.io__
+
+</div>
 
 ## <a name="adding-files-via-command-line"></a> 3. Adding files via command line using Git (Alternative)
 
@@ -177,9 +183,9 @@ To set up a custom domain, you have to own one or purchase it on a domain provid
 - Scroll down to the **Github Pages** section
 - In the **Custom domain** area, enter your domain and click save.
 
-image here
+![Creating a CNAME][step-4-1]
 
-This will generate a CNAME file in your repo.
+This will generate a CNAME file in your repo. All it does is redirect the url `username.github.io` to your newly added domain.
 
 ### 4.2 Point your domain to Github
 
@@ -187,8 +193,8 @@ This is the part where we tell your custom domain to use Github as the platform 
 
 Go to the dashboard of where you purchased your domain. There should be an option to modify its **Nameservers**. Then, select **Custom DNS**. Add the following IP Addresses:
 
-- 192.30.252.153
-- 192.30.252.154
+- `192.30.252.153`
+- `192.30.252.154`
 
 ![Custom DNS][custom-dns]
 
@@ -216,4 +222,7 @@ Another reason is that they equip your site with free SSL (https). Although you 
 
 [step-1]: /static/images/github-step-1.png "Create a new repository"
 [step-2]: /static/images/github-step-2.png "Adding a new file"
+[step-2-1]: /static/images/github-step-2-1.png "Creating index.html"
+[step-2-2]: /static/images/github-step-2-2.png "Committing index.html"
+[step-4-1]: /static/images/github-step-4-1.png "Creating a CNAME"
 [custom-dns]: /static/images/custom-dns.png "Configuring custom DNS"

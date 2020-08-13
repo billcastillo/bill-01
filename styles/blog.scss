@@ -47,6 +47,16 @@
 article {
   color: $text-color;
 
+  * {
+    > em {
+      font-style: italic;
+    }
+
+    > strong {
+      font-weight: 700;
+    }
+  }
+
   h2,
   h3,
   h4,
@@ -56,6 +66,7 @@ article {
     margin-bottom: 0.5em;
     margin-top: $paragraph-margin * 1.5;
     // color: $sub-text-color;
+    
   }
 
   h1 {
@@ -70,6 +81,7 @@ article {
   h4 {
     font-size: 24px;
     font-weight: 400;
+    margin-top: $paragraph-margin;
   }
   h5 {
     font-size: 22px;
@@ -89,14 +101,6 @@ article {
       border-radius: 3px;
       font-family: $font-mono;
       white-space: pre-wrap;
-    }
-
-    em {
-      font-style: italic;
-    }
-
-    strong {
-      font-weight: 700;
     }
   }
 
@@ -209,11 +213,24 @@ article {
       }
     }
   }
+
+  .bordered {
+    padding: 1em;
+    border: 1px solid $grey-10;
+    border-radius: 8px;
+
+    > *:first-child { margin-top: 0 }
+    > *:last-child { margin-bottom: 0; }
+
+    &.success {
+      background-color: transparentize($success-color, 0.60);
+    }
+  }
 }
 
 @media screen and (min-width: 545px) {
   article {
-    p {
+    p, li {
       font-size: 1.11111em;
       line-height: 1.5;
     }

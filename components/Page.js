@@ -30,10 +30,18 @@ const Page = props => (
 			}
 			
 			.section .section-title {
-				font-size: 32px;
-				line-height: 32px;
 				text-transform: uppercase;
 				margin-bottom: 32px;
+			}
+			
+			.section h1.section-title {
+				font-size: 46px;
+				line-height: 52px;
+			}
+
+			.section h2.section-title {
+				font-size: 32px;
+				line-height: 32px;
 			}
 
 			@media screen and (min-width: 545px) {

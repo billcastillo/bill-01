@@ -3,27 +3,25 @@
     "title": "Hardware",
     "items": [
       {
-        "item": "Computer",
-        "name": "Custom build PC",
-        "description": "my gaming desktop",
-        "content": "<ul><li></li></ul>"
-      },
-      {
         "item": "Mouse",
         "name": "Logitech G604",
-        "description": "So many buttons! Ever since I got a mouse with two side buttons, I never went back and kept looking for more. I keep looking I like having a A gaming mouse to go along with my gaming desktop",
+        "description": "So many buttons! Ever since I got a mouse with two side buttons, I never went back and kept looking for even more buttons. Programmable side buttons, dpi change, and more good stuff.",
         "link": "https://www.logitechg.com/en-ph/products/gaming-mice/g604-lightspeed-wireless-gaming-mouse.910-005651.html",
         "image": "logitech-g604-mouse.webp"
       },
       {
         "item": "Keyboard",
         "name": "ikbc mf87 (White)",
-        "description": "An 80% mechanical keyboard. Heavy as hell. If you ever drop this on your toe, it's a guaranteed hospital visit",
+        "description": "An 80% mechanical keyboard. Heavy as hell. If you ever drop this on your toe, it's a guaranteed hospital visit.",
         "link": "https://www.ikbckeyboard.com/product-page/mf87",
         "image": ""
       },
       {
-        "item": "Keycaps"
+        "item": "Keycaps",
+        "name": "Tai-Hao Paradise PBT",
+        "description": "Not really necessary but I like to make things pretty.",
+        "link": "https://drop.com/buy/tai-hao-paradise-pbt-keycap-set-massdrop-debut?utm_source=linkshare&referer=WRFPTF",
+        "image": ""
       }
     ]
   },
@@ -31,11 +29,14 @@
     "title": "Software",
     "items": [
       {
-        "item": "Editor"
+        "item": "Editor",
+        "name": "Visual Studio Code",
+        "description": "Before it was Sublime, then IntelliJ but VS Code gave most of the things I need for development."
       },
       {
         "item": "File explorer",
-        "name": "Clover"
+        "name": "Clover",
+        "description": "Because I prefer multiple tabs then multiple windows."
       },
       {
         "item": "Terminal",
@@ -45,8 +46,13 @@
   },
   {
     "title": "Services",
-    "description": "I'm a sucker for free stuff. Am I cheap or smart? Probably. But because of the abundance of free stuff out there, you don't have to spend a single peso. Most of the services listed here have a free plan.",
+    "description": "I'm a sucker for free stuff. Am I just cheap? Probably. But the free plans are usually enough for me; most of the services listed here have a free plan.",
     "items": [
+      {
+        "item": "Writing",
+        "name": "Grammarly",
+        "description": "I'm not <em>that</em> good at English. Even if I am, I also make mistakes sometime. Grammarly has your back."
+      },
       {
         "item": "General web dev",
         "name": "Frontend Focus",

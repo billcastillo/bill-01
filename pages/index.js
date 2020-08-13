@@ -55,8 +55,8 @@ const Home = (props) => (
       </Container>
     </section>
 
-    <Work projects={projects} noNavigation={true} import={true} />
     <Blog posts={props.posts} noNavigation={true} import={true} />
+    <Work projects={projects} noNavigation={true} import={true} />
     <Contact />
 
     <style jsx>{`
