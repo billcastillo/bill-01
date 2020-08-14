@@ -1,23 +1,27 @@
-$color-1: #FFEEDD;
-$color-2: #F2989A;
+$color-1: #ffeedd;
+$color-2: #f2989a;
 $color-link: #8587f0;
-$color-info: transparentize($color-link, 0.80);
+$color-info: transparentize($color-link, 0.8);
 
-$grey-10: #F5F6F5;
-$grey-20: #DEE0E0;
-$grey-30: #C7C9CB;
-$grey-40: #B0B0B6;
-$grey-50: #2D4E57;
+$grey-10: #f5f6f5;
+$grey-20: #dee0e0;
+$grey-30: #c7c9cb;
+$grey-40: #b0b0b6;
+$grey-50: #2d4e57;
 
-$brand-color: #F2C398;
+$color-brand: #f2c398;
 $text-color: #262626;
 $sub-text-color: #464646;
 $header-color: #504766;
 
-$paragraph-margin: 1.960em;
+$color-success: lighten(#98f2c3, 10%);
+
+$paragraph-margin: 1.96em;
 
 // Typfaces
-$font-default: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif;
-$font-poppins: 'Poppins', $font-default;
-$font-domine: 'Domine', $font-default;
-$font-mono: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+$font-default: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica,
+  sans-serif;
+$font-poppins: "Poppins", $font-default;
+$font-domine: "Domine", $font-default;
+$font-mono: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+  Bitstream Vera Sans Mono, Courier New, monospace;

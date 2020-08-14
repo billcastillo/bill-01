@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Software",
+    "items": [
+      {
+        "item": "Editor",
+        "name": "Visual Studio Code",
+        "description": "Before it was Sublime 3, then IntelliJ but VS Code gave most of the things I needed for development."
+      },
+      {
+        "item": "File explorer",
+        "name": "Clover",
+        "description": "Because I prefer multiple tabs than multiple windows."
+      },
+      {
+        "item": "Terminal",
+        "name": "Hyper",
+        "description": "To be honest, there are better terminals out there but this one has a pikachu theme."
+      }
+    ]
+  },
+  {
+    "title": "Services",
+    "description": "I'm a sucker for free stuff. Am I just cheap? Probably. But the free plans are usually enough for me; most of the services listed here have a free plan.",
+    "items": [
+      {
+        "item": "Hosting",
+        "name": "zeit.co",
+        "description": "I used to host everyting on Github but I really like zeit's ssr, auto deploy stuff. I might move to netlify in the future."
+      },
+      {
+        "item": "Domain",
+        "name": "Namecheap",
+        "description": "I think the price are fair and sometimes there's a sale. Their dashboard is good too."
+      },
+      {
+        "item": "Writing",
+        "name": "Grammarly",
+        "description": "I'm not <em>that</em> good at English. Even if I am, I also make mistakes sometime. Grammarly has your back."
+      },
+      {
+        "item": "CMS",
+        "name": "Forestry.io",
+        "description": "Best for static site generators. You can make new posts on your phone!"
+      },
+      {
+        "item": "General web dev",
+        "name": "Frontend Focus",
+        "link": "https://frontendfoc.us/"
+      }
+    ]
+  },
+  {
+    "title": "Hardware",
+    "items": [
+      {
+        "item": "Mouse",
+        "name": "Logitech G604",
+        "description": "So many buttons! Ever since I got a mouse with two side buttons, I never went back and kept looking for even more buttons. Programmable side buttons, dpi change, and more good stuff.",
+        "link": "https://www.logitechg.com/en-ph/products/gaming-mice/g604-lightspeed-wireless-gaming-mouse.910-005651.html",
+        "image": "logitech-g604-mouse.webp"
+      },
+      {
+        "item": "Keyboard",
+        "name": "ikbc mf87 (White)",
+        "description": "An 80% mechanical keyboard. Heavy as hell. If you ever drop this on your toe, it's a guaranteed hospital visit.",
+        "link": "https://www.ikbckeyboard.com/product-page/mf87",
+        "image": ""
+      },
+      {
+        "item": "Keycaps",
+        "name": "Tai-Hao Paradise PBT",
+        "description": "Not really necessary but I like to make things pretty.",
+        "link": "https://drop.com/buy/tai-hao-paradise-pbt-keycap-set-massdrop-debut?utm_source=linkshare&referer=WRFPTF",
+        "image": ""
+      },
+      {
+        "item": "Speakers",
+        "name": "KRK Rokit 5",
+        "description": "These are monitors by the way, not speakers. I turned them into my everyday speaker with just few eq adjustments. I used to have this hobby where I needed this kind of monitors."
+      }
+    ]
+  }
+]

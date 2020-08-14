@@ -11,6 +11,7 @@ const Work = props => {
 			import={props.import}>
 
 				<div className="work-wrapper">
+				{/* <h3 className="work-subtitle">Clients I was lucky to work with:</h3> */}
 					<div className="work-brands">
 						{site.brands.map((brand, index) => <img className="work-brands-img" key={index} src={`/static/brands/${brand.image}`} alt={brand.name} title={brand.name}/>)}
 					</div>
@@ -32,7 +33,7 @@ const Work = props => {
 						flex-wrap: wrap;
 						justify-content: center;
 						align-items: flex-start; // safari fix
-						margin-bottom: 64px;
+						margin-bottom: 32px;
 					}
 
 					.work-brands .work-brands-img {
