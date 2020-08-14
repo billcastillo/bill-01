@@ -15,7 +15,7 @@ After logging in, [create a new repository](https://github.new/ "Create a new re
 
 #### Important Notes:
 
-- Repository name should be _username_.github.io where _username_ is your username
+- Repository name should be **<username\>.github.io** where <username\> is your username
 - Check "Initialize this repository with a README"
 
 ![Create a new repository][step-1]
@@ -198,10 +198,14 @@ Go to the dashboard of where you purchased your domain. There should be an optio
 
 ![Custom DNS][custom-dns]
 
+<div className="bordered">
+
 #### You're all set up!
 
 Note that changes to DNS might take a few minutes to an hour to take effect.
 Also, the domain _username.github.io_ will now redirect to your custom domain.
+
+</div>
 
 ## 5. Setting up Cloudflare (Optional)
 
@@ -215,7 +219,7 @@ Note that this is only for sites with a custom domain.
 
 Another reason is that they equip your site with free SSL (https). Although you can also get certified with [Let's Encrypt](https://letsencrypt.org/getting-started/) for free, Cloudflare saves you time on setting up by just ticking one option in configurations. There's a lot of stuff behind the scenes but that's the gist of it. It is, once again, **FREE** but they have paid plans if you are interested in their services.
 
-## More information
+## Further Reading:
 
 - [Github Pages](https://pages.github.com/)
 - [Official Docs](https://docs.github.com/en/github/working-with-github-pages)

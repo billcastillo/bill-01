@@ -22,8 +22,6 @@ const BlogList = () => {
     return data;
   })(require.context("../posts", true, /\.md$/));
 
-  console.log("posts:", posts);
-
   return { posts };
 };
 

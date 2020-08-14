@@ -69,8 +69,6 @@ class BlogPost extends React.Component {
 		const { query } = props
 		const content = await require(`../posts/${query.title}.md`)
 		const data =  matter(content.default)
-		console.log('data form blogpost:', data)
-		console.log('query:', query)
 		return data
 	}
 }
