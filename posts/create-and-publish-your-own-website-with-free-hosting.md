@@ -1,18 +1,18 @@
 ---
 title: Create and publish your own website with free hosting using Github pages
 date: 2020-08-09
-author: Touko Peltomaa
+author: Bill Castillo
 description: Save money using this one simple trick! Web host servers hate this article.
 image: hosted-by-github.png
 ---
 
-[Github](https://github.com) is a platform where companies and indie developers store and manage their codes, projects, and software. It is a popular collaboration tool and a hub for open source applications. So go ahead and create your account if you haven't yet.
+[Github](https://github.com) is a platform where indie developers and commercial companies store and manage their codes, projects, and software. It is a popular collaboration tool and a hub for open source applications. So go ahead and create your account if you haven't yet.
 
 ## 1. Creating a Github repository
 
 After logging in, [create a new repository](https://github.new/ "Create a new repository").
 
-Repository name should be **<username\>.github.io** where <username\> is your username
+Repository name should be **<username\>.github.io** where <username\> is your Github username.
 
 Check "Initialize this repository with a README"
 
@@ -23,6 +23,8 @@ Check "Initialize this repository with a README"
 There are two ways to create/add files to your repo: Github GUI or via command line. In this section, we'll utilize the GUI. Alternatively, you can skip this section and go to [Adding files via command line](#adding-files-via-command-line).
 
 Click **Add file** and select **Create new file** or Upload if you already have your `index.html`
+
+Note that this article does not cover how to create the actual contents of your website. A quick way to create your site is to use pre-built HTML templates. Take a look and choose at [html5up](https://html5up.net/).
 
 ![Adding a new file][step-2]
 
@@ -98,8 +100,6 @@ cd username.github.io
 ### 3.2 Creating and editing files
 
 Go ahead and create and add all the files you want to add to your website. The only required file is `index.html` - this is where the contents of the home page of your site will go.
-
-Quick way to create your site is to use pre-built html templates. Take a look and choose at [html5up](https://html5up.net/).
 
 ### 3.3 Adding / uploading files to the repository
 
