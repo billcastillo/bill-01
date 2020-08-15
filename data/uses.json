@@ -29,6 +29,11 @@
         "description": "I used to host everyting on Github but I really like zeit's ssr, auto deploy stuff. I might move to netlify in the future."
       },
       {
+        "item": "Mock-ups",
+        "name": "Figma",
+        "description": "If I thought of a layout or concept, I will spend hours doing it directly on HTML and CSS-only to scrap it because I don't like it. Thankful I found Figma."
+      },
+      {
         "item": "Domain",
         "name": "Namecheap",
         "description": "I think the price are fair and sometimes there's a sale. Their dashboard is good too."
@@ -78,6 +83,17 @@
         "item": "Speakers",
         "name": "KRK Rokit 5",
         "description": "These are monitors by the way, not speakers. I turned them into my everyday speaker with just few eq adjustments. I used to have this hobby where I needed this kind of monitors."
+      }
+    ]
+  },
+  {
+    "title": "To consider",
+    "description": "Havent used yet but want to",
+    "items": [
+      {
+        "item": "Editor",
+        "name": "VS Codium",
+        "link": "https://github.com/VSCodium/vscodium"
       }
     ]
   }

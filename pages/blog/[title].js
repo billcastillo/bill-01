@@ -8,6 +8,12 @@ import Container from "../../formats/Container";
 import { formatDate } from "../../helpers/utils";
 import "../../styles/blog.scss";
 
+const BlogImage = (props) => (
+  <div className='blog-image'>
+    <img src={`/static/images/${props.src}`} />
+  </div>
+);
+
 class BlogPost extends React.Component {
   constructor(props) {
     super(props);
@@ -19,12 +25,17 @@ class BlogPost extends React.Component {
     return (
       <>
         <Head title={data.title} />
+
         <Navigation />
 
         <Container>
           <div className='blog-wrapper'>
-            <p className='blog-date'>Published on: {formatDate(data.date)}</p>
-            <h1 className='blog-title domine'>{data.title}</h1>
+            <div className='blog-meta'>
+              <h1 className='blog-title domine'>{data.title}</h1>
+              <p className='blog-date'>Published on: {formatDate(data.date)}</p>
+            </div>
+
+            {data.image ? <BlogImage src={data.image} /> : ""}
 
             <article className='blog-post'>
               <Markdown
