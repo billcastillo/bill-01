@@ -7,34 +7,41 @@
 }
 
 .blog-wrapper {
-  max-width: 700px;
   margin: 0 auto 128px auto;
-}
 
-.blog-wrapper .blog-date {
-  color: $grey-50;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-  margin-bottom: 8px;
-}
+  .blog-meta {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 
-.blog-wrapper .blog-title {
-  color: #504766;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 1;
-  margin-bottom: 64px;
-}
+  .blog-title {
+    color: #504766;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+  }
 
-.blog-wrapper pre code {
-  display: block;
-  font-size: 14px;
+  .blog-date {
+    color: $grey-50;
+    font-size: 1.4rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 2em;
+  }
+
+  .blog-image {
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 860px;
+    }
+  }
 }
 
 @media screen and (min-width: 545px) {
   .blog-wrapper .blog-title {
-    font-size: 64px;
-    line-height: 1.2;
+    font-size: 4.8rem;
   }
 }
 
@@ -45,6 +52,8 @@
  */
 
 article {
+  max-width: 700px;
+  margin: 0 auto;
   color: $text-color;
 
   * {
@@ -64,21 +73,10 @@ article {
   h6 {
     line-height: 1.5;
     margin-top: 2em;
-    // margin-bottom: 0.5em;
-    // color: $sub-text-color;
 
-    + p {
-      margin-top: 1em;
-    }
-
+    + p,
     + ul,
     + ol {
-      margin-top: 0.50em;
-    }
-  }
-
-  h3, h4, h5, h6 {
-    + p {
       margin-top: 0.5em;
     }
   }
@@ -88,20 +86,21 @@ article {
   }
 
   h2 {
-    font-size: 3rem;
-    line-height: 1.5;
+    font-size: 2.4rem;
+    line-height: 1.35;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 2rem;
     margin-top: 2.5em;
   }
 
   h4 {
     font-size: 2rem;
     font-weight: 500;
-    letter-spacing: 0.05em;
-    margin-top: 2em;
+    line-height: 1.2;
+    letter-spacing: 0.025em;
+    margin-top: 1em;
   }
 
   h5 {
@@ -111,12 +110,12 @@ article {
 
   p,
   li {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.5;
 
     code {
-      font-size: 0.85em;
-      padding: 0.125em 0.25em;
+      font-size: 1.3rem;
+      padding: 0.25em 0.25em;
       background: #e5e6ef;
       border-radius: 3px;
       font-family: $font-mono;
@@ -131,7 +130,7 @@ article {
   a {
     position: relative;
     display: inline;
-    font-weight: 700;
+    font-weight: 500;
     color: darken($color-link, 0%);
     // text-decoration: underline;
     box-shadow: inset 0px -4px 0px 0px $color-1;
@@ -165,6 +164,23 @@ article {
   ol {
     list-style: decimal outside none;
     margin: 2em 0 2em 1em;
+
+    li {
+      counter-increment: item;
+      list-style-type: none;
+      text-indent: -1rem;
+      margin: 0;
+      // padding: 0 0 0 1rem;
+
+      &::before {
+        display: inline-block;
+        content: counter(item) ".";
+        font-weight: 500;
+        padding-right: 0.5rem;
+        text-align: right;
+        width: 1.5rem;
+      }
+    }
   }
 
   ul {
@@ -185,13 +201,11 @@ article {
   img {
     width: 100%;
     border: 1px solid $grey-30;
-    border-radius: 8px;
-    box-sizing: border-box;
 
     @media screen and (min-width: 900px) {
-      margin-left: -80px;
-      margin-right: -80px;
-      width: calc(100% + 160px);
+      // margin-left: -80px;
+      // margin-right: -80px;
+      // width: calc(100% + 160px);
     }
   }
 
@@ -212,6 +226,7 @@ article {
     max-height: 600px;
     overflow: auto;
     code {
+      display: block;
       font-size: 14px;
       line-height: 24px;
       color: $sub-text-color;
@@ -269,12 +284,7 @@ article {
       position: relative;
       text-align: center;
       border: none;
-      // background-color: $success-color;
       background-color: white;
-
-      > *:last-child {
-        margin-top: 0;
-      }
 
       &::before {
         position: absolute;
@@ -296,7 +306,7 @@ article {
         width: 100%;
         height: 100%;
         top: 1em;
-        left: 0.5em;
+        left: 0;
         border-radius: 12px;
         // background-color: $color-1;
         background: repeating-linear-gradient(
@@ -320,16 +330,44 @@ article {
       margin-top: 4em;
     }
 
+    h2 {
+      font-size: 3rem;
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+    }
+
+    h4 {
+      font-size: 2.4rem;
+      line-height: 1.5;
+      margin-top: 2em;
+    }
+
     p,
     li {
       font-size: 2rem;
       line-height: 1.5;
+
+      code {
+        font-size: 1.7rem;
+        padding: 0.125em 0.25em;
+      }
+    }
+
+    img {
+      border-radius: 8px;
     }
 
     hr {
       margin: 6em auto;
     }
+  }
+}
 
+@media screen and (min-width: 768px) {
+  article {
     .bordered {
       &.success {
         &::after {

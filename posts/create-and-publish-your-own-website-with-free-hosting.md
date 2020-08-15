@@ -3,20 +3,18 @@ title: Create and publish your own website with free hosting using Github pages
 date: 2020-08-09
 author: Touko Peltomaa
 description: Save money using this one simple trick! Web host servers hate this article.
+image: hosted-by-github.png
 ---
-
-This guide is for those who want to create their site, portfolio, blog, or already has and is looking for how and where to host their website.
 
 [Github](https://github.com) is a platform where companies and indie developers store and manage their codes, projects, and software. It is a popular collaboration tool and a hub for open source applications. So go ahead and create your account if you haven't yet.
 
-## 1. Creating your repository
+## 1. Creating a Github repository
 
 After logging in, [create a new repository](https://github.new/ "Create a new repository").
 
-#### Important Notes:
+Repository name should be **<username\>.github.io** where <username\> is your username
 
-- Repository name should be **<username\>.github.io** where <username\> is your username
-- Check "Initialize this repository with a README"
+Check "Initialize this repository with a README"
 
 ![Create a new repository][step-1]
 
@@ -64,7 +62,20 @@ Next, scroll down at the bottom and add a commit message. Commit messages should
 
 If you've already added files via Github's GUI, you can skip this section and go to [Setting up custom domain](#4) section.
 
-For windows users: [install Git for Windows](https://git-scm.com/download/win) (preinstalled if you're using Mac)
+In this section, we will be utilizing the Git system to manage our files.
+
+#### What is Git?
+
+[**Git**](https://git-scm.com/) is a version control system (VCS) for keeping track of revisions of your project. One of its main features is that it allows a team to work together simultaneously through branches.
+
+Github is just one of the platforms that utilize the Git system. There are others like [Gitlab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/product), etc.
+
+[Install Git for Windows](https://git-scm.com/download/win) (preinstalled if you're using Mac).
+
+#### Further Reading:
+
+- [Get Started with Git](https://www.taniarascia.com/getting-started-with-git/)
+- [What is Git](https://www.atlassian.com/git/tutorials/what-is-git)
 
 ### 3.1 Clone your repo locally
 
@@ -88,6 +99,8 @@ cd username.github.io
 
 Go ahead and create and add all the files you want to add to your website. The only required file is `index.html` - this is where the contents of the home page of your site will go.
 
+Quick way to create your site is to use pre-built html templates. Take a look and choose at [html5up](https://html5up.net/).
+
 ### 3.3 Adding / uploading files to the repository
 
 For now, all your files are not yet officially in your repo.
@@ -100,7 +113,7 @@ git status
 This will list all the files added or changed.
 
 ```shell
-C:\Users\Bill Castillo\Documents\Github\billcasbie.github.io> git status
+C:\Documents\Github\billcasbie.github.io> git status
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -129,7 +142,7 @@ git add styles/style.css
 Verify files added via `git status`
 
 ```shell
-C:\Users\Bill Castillo\Documents\Github\billcasbie.github.io> git status
+C:\Documents\Github\billcasbie.github.io> git status
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -219,7 +232,7 @@ Note that this is only for sites with a custom domain.
 
 Another reason is that they equip your site with free SSL (https). Although you can also get certified with [Let's Encrypt](https://letsencrypt.org/getting-started/) for free, Cloudflare saves you time on setting up by just ticking one option in configurations. There's a lot of stuff behind the scenes but that's the gist of it. It is, once again, **FREE** but they have paid plans if you are interested in their services.
 
-## Further Reading:
+#### Further Reading:
 
 - [Github Pages](https://pages.github.com/)
 - [Official Docs](https://docs.github.com/en/github/working-with-github-pages)

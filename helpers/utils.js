@@ -1,5 +1,5 @@
 export const formatDate = (dateToFormat) => {
-  const newDate = new Date(dateToFormat);
+  const newDate = getProperDate(dateToFormat);
 
   const day = newDate.getDate();
   const month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(
@@ -8,4 +8,8 @@ export const formatDate = (dateToFormat) => {
   const year = newDate.getFullYear();
 
   return `${month} ${day}, ${year}`;
+};
+
+export const getProperDate = (props) => {
+  return new Date(props);
 };
