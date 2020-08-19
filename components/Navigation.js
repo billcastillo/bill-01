@@ -62,9 +62,9 @@ const Navigation = (props) => (
         position: relative;
         width: 100%;
         padding: 0;
+        margin-top: 24px;
         margin-bottom: 40px;
         text-align: center;
-        background-color: #ffeedd;
       }
 
       nav .nav-wrapper {
@@ -101,11 +101,16 @@ const Navigation = (props) => (
       @media screen and (min-width: 545px) {
         nav {
           text-align: right;
-          margin-bottom: 56px;
+          margin-top: 40px;
+          margin-bottom: 80px;
         }
 
         nav .nav-link {
           font-size: 1.8rem;
+        }
+
+        nav ul li:not(:last-child) {
+          margin-right: 60px;
         }
       }
     `}</style>
