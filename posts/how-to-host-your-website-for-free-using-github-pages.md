@@ -1,5 +1,5 @@
 ---
-title: Create and publish your own website with free hosting using Github pages
+title: How to Host your website for Free Using Github pages
 date: 2020-08-09
 author: Bill Castillo
 description: Save money using this one simple trick! Web host servers hate this article.
@@ -8,7 +8,7 @@ image: hosted-by-github.png
 
 [Github](https://github.com) is a platform where indie developers and commercial companies store and manage their codes, projects, and software. It is a popular collaboration tool and a hub for open source applications. So go ahead and create your account if you haven't yet.
 
-## 1. Creating a Github repository
+## Creating a Github repository
 
 After logging in, [create a new repository](https://github.new/ "Create a new repository").
 
@@ -18,7 +18,7 @@ Check "Initialize this repository with a README"
 
 ![Create a new repository][step-1]
 
-## <a name="2"></a> 2. Adding files
+## <a name="2"></a> Adding files
 
 There are two ways to create/add files to your repo: Github GUI or via command line. In this section, we'll utilize the GUI. Alternatively, you can skip this section and go to [Adding files via command line](#adding-files-via-command-line).
 
@@ -28,7 +28,7 @@ Note that this article does not cover how to create the actual contents of your 
 
 ![Adding a new file][step-2]
 
-### 2.1 Creating your front page
+### Creating your front page
 
 On file creation, name your file as `index.html` and add this as content:
 
@@ -60,7 +60,7 @@ Next, scroll down at the bottom and add a commit message. Commit messages should
 
 </div>
 
-## <a name="adding-files-via-command-line"></a> 3. Adding files via command line using Git (Alternative)
+## <a name="adding-files-via-command-line"></a> Adding files via command line using Git (Alternative)
 
 If you've already added files via Github's GUI, you can skip this section and go to [Setting up custom domain](#4) section.
 
@@ -68,7 +68,7 @@ In this section, we will be utilizing the Git system to manage our files.
 
 #### What is Git?
 
-[**Git**](https://git-scm.com/) is a version control system (VCS) for keeping track of revisions of your project. One of its main features is that it allows a team to work together simultaneously through branches.
+[Git](https://git-scm.com/) is a version control system (VCS) for keeping track of revisions of your project. One of its main features is that it allows a team to work together simultaneously through branches.
 
 Github is just one of the platforms that utilize the Git system. There are others like [Gitlab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/product), etc.
 
@@ -79,7 +79,7 @@ Github is just one of the platforms that utilize the Git system. There are other
 - [Get Started with Git](https://www.taniarascia.com/getting-started-with-git/)
 - [What is Git](https://www.atlassian.com/git/tutorials/what-is-git)
 
-### 3.1 Clone your repo locally
+### Clone your repo locally
 
 Open your favorite terminal app. For windows, you can use Windows Powershell or install the [new Windows Terminal](https://www.microsoft.com/en-hk/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab). I use [Hyper](https://hyper.is/) terminal.
 
@@ -97,11 +97,11 @@ Change the terminal directory so you're inside that folder.
 cd username.github.io
 ```
 
-### 3.2 Creating and editing files
+### Creating and editing files
 
 Go ahead and create and add all the files you want to add to your website. The only required file is `index.html` - this is where the contents of the home page of your site will go.
 
-### 3.3 Adding / uploading files to the repository
+### Adding / uploading files to the repository
 
 For now, all your files are not yet officially in your repo.
 Run the `git status` command.
@@ -160,7 +160,7 @@ git reset .
 git reset index.html
 ```
 
-### 3.4 Committing and pushing files
+### Committing and pushing files
 
 After adding files, the next step is to commit it. Commit files via `git commit -m "<commit message>"`. Commit messages should just be a short description of your change.
 
@@ -186,11 +186,11 @@ Visit **<username.github.io\>** to see your site.
 
 ---
 
-## <a name="4"></a> 4. Setting up a custom domain (Optional)
+## <a name="4"></a> Setting up a custom domain (Optional)
 
 To set up a custom domain, you have to own one or purchase it on a domain provider. I use [Namecheap](https://namecheap.com) to manage my domains. There are many providers out there, just make sure they are ICANN-accredited.
 
-### 4.1 Creating a CNAME record
+### Creating a CNAME record
 
 1. Go to your repository settings
 2. Scroll down to the **Github Pages** section
@@ -200,7 +200,7 @@ To set up a custom domain, you have to own one or purchase it on a domain provid
 
 This will generate a CNAME file in your repo. All it does is redirect the url `username.github.io` to your newly added domain.
 
-### 4.2 Point your domain to Github
+### Point your domain to Github
 
 This is the part where we tell your custom domain to use Github as the platform to host your website.
 
@@ -220,7 +220,7 @@ Also, the domain _username.github.io_ will now redirect to your custom domain.
 
 </div>
 
-## 5. Setting up Cloudflare (Optional)
+## Setting up Cloudflare (Optional)
 
 <div className="note">
 

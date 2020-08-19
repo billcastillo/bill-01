@@ -32,7 +32,7 @@ class BlogPost extends React.Component {
           <div className='blog-wrapper'>
             <div className='blog-meta'>
               <h1 className='blog-title domine'>{data.title}</h1>
-              <p className='blog-date'>Published on: {formatDate(data.date)}</p>
+              <p className='blog-date'>{formatDate(data.date)}</p>
             </div>
 
             {data.image ? <BlogImage src={data.image} /> : ""}

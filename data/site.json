@@ -1,32 +1,28 @@
 {
-	"about": "Hi, i’m a Front-end Developer. I design and build websites and interfaces that humans should find easy to use and understand.",
-	"contact": "You can contact me at castillobil (at) gmail.com",
-	"contactLinks": [
-		{
-			"name": "Github",
-			"link": "https://github.com/billcastillo"
-		},
-		{
-			"name": "LinkedIn",
-			"link": "https://www.linkedin.com/in/bill-castillo-3879b2bb/"
-		},
-		{
-			"name": "Codepen",
-			"link": "https://codepen.io/billcastillo"
-		}
-	],
-	"brands": [
-		{
-			"name": "Samsung",
-			"image": "samsung-black.png"
-		},
-		{
-			"name": "Kate Spade Japan",
-			"image": "katespade-black.png"
-		},
-		{
-			"name": "Disney Store Japan",
-			"image": "disney-black.png"
-		}
-	]
+  "about": "Hi, i’m a Front-end Developer. I design and build websites and interfaces that humans should find easy to use and understand.",
+  "contact": "You can contact me at castillobil (at) gmail.com",
+  "contactLinks": [
+    {
+      "name": "Github",
+      "link": "https://github.com/billcastillo"
+    },
+    {
+      "name": "Codepen",
+      "link": "https://codepen.io/billcastillo"
+    }
+  ],
+  "brands": [
+    {
+      "name": "Samsung",
+      "image": "samsung-black.png"
+    },
+    {
+      "name": "Kate Spade Japan",
+      "image": "katespade-black.png"
+    },
+    {
+      "name": "Disney Store Japan",
+      "image": "disney-black.png"
+    }
+  ]
 }

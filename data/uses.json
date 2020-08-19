@@ -87,13 +87,27 @@
     ]
   },
   {
-    "title": "To consider",
+    "title": "Browser Extensions",
+    "items": [
+      {
+        "item": "Wappalyzer"
+      }
+    ]
+  },
+  {
+    "title": "Plan to use",
     "description": "Havent used yet but want to",
     "items": [
       {
         "item": "Editor",
         "name": "VS Codium",
         "link": "https://github.com/VSCodium/vscodium"
+      },
+      {
+        "item": "CMS",
+        "name": "Netlify CMS",
+        "description": "I'm planning to rebuild this blog using Gatsby in the future and use Netflify as hosting; naturally I'll use their CMS feature.",
+        "link": "https://www.netlifycms.org/"
       }
     ]
   }
