@@ -13,8 +13,8 @@ const BlogEntry = (props) => {
   const router = useRouter();
 
   const handleKeypress = (target) => {
-    if (target.charCode === 13) {
-      router.push(href)
+    if (target.charCode === 13 || target.charCode === 32) {
+      router.push(href);
     }
   }
 
