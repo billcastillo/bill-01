@@ -1,7 +1,7 @@
 /* This component inserts the prop inside a padded container */
 
 const Container = (props) => (
-  <div className='container'>
+  <div className={`container ${props.class ? props.class : ""}`}>
     {props.children}
 
     <style jsx>{`

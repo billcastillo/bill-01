@@ -102,7 +102,7 @@ const Navigation = (props) => (
         nav {
           text-align: right;
           margin-top: 40px;
-          margin-bottom: 80px;
+          margin-bottom: 160px;
         }
 
         nav .nav-link {

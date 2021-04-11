@@ -2,6 +2,7 @@ $color-1: #ffeedd;
 $color-2: #f2989a;
 $color-link: #8587f0;
 $color-info: #f5f6f5;
+$color-red: #FF5050;
 
 $grey-10: #f5f6f5;
 $grey-20: #dee0e0;
@@ -25,3 +26,11 @@ $font-poppins: "Poppins", $font-default;
 $font-domine: "Domine", $font-default;
 $font-mono: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
   Bitstream Vera Sans Mono, Courier New, monospace;
+
+// Article properties
+$article-max-width: 700px;
+
+
+// $dark-bg: rgb(35, 19, 32);
+$dark-bg: #2F1D2C;
+$dark-text: #efefef;

@@ -20,49 +20,53 @@ class BlogPost extends React.Component {
 		const { content, data } = this.props;
 
 		return (
-			<>
-				<Head title={data.title} />
-				<Navigation />
+      <>
+        <Head title={data.title} />
+        <Navigation />
 
-				<Container>
-				<div className="blog-wrapper">
-					<p className="blog-date">{data.date}</p>
-					<h1 className="blog-title domine">{data.title}</h1>
+        <Container>
+          <div className='blog-wrapper'>
+            <p className='blog-date'>{data.date}</p>
+            <h1 className='blog-title poppins'>{data.title}</h1>
 
-					<article className="blog-post">
-						<Markdown source={content} escapeHtml={false} renderers={{code: CodeBlock}}/>
-					</article>
+            <article className='blog-post'>
+              <Markdown
+                source={content}
+                escapeHtml={false}
+                renderers={{ code: CodeBlock }}
+              />
+            </article>
 
-					<style jsx>{`
-						.blog-wrapper {
-							max-width: 700px;
-							margin: 64px auto;
-						}
+            <style jsx>{`
+              .blog-wrapper {
+                max-width: 700px;
+                margin: 64px auto;
+              }
 
-						.blog-wrapper .blog-date {
-							color: #B0B0B6;
-							font-size: 14px;
-							letter-spacing: 0.050em;
-							margin-bottom: 8px;
-						}
+              .blog-wrapper .blog-date {
+                color: #b0b0b6;
+                font-size: 14px;
+                letter-spacing: 0.05em;
+                margin-bottom: 8px;
+              }
 
-						.blog-wrapper .blog-title {
-							color: #504766;
-							font-size: 64px;
-							font-weight: 400;
-							line-height: 1.2;
-							margin-bottom: 64px;
-						}
+              .blog-wrapper .blog-title {
+                color: #504766;
+                font-size: 64px;
+                font-weight: 400;
+                line-height: 1.1;
+                margin-bottom: 64px;
+              }
 
-						.blog-wrapper pre code {
-							display: block;
-							font-size: 14px;
-						}
-					`}</style>
-				</div>
-				</Container>
-			</>
-		)
+              .blog-wrapper pre code {
+                display: block;
+                font-size: 14px;
+              }
+            `}</style>
+          </div>
+        </Container>
+      </>
+    );
 	}
 
 	static async getInitialProps(props) {

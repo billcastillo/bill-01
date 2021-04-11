@@ -4,18 +4,34 @@
  */
 
 import Link from "next/link";
-import Router from "next/router";
-import { routeros } from "react-syntax-highlighter/dist/styles/hljs";
+import { useRouter } from "next/router";
+// import { routeros } from "react-syntax-highlighter/dist/styles/hljs";
 
 const BlogEntry = (props) => {
+  const href = `/blog/${props.article.slug}`;
   const { data } = props.article.document;
+  const router = useRouter();
+
+  const handleKeypress = (target) => {
+    if (target.charCode === 13) {
+      router.push(href)
+    }
+  }
+
+  const handleClick = () => {
+    router.push(href)
+  };
 
   return (
-    <Link href={`/blog/[title]`} as={`/blog/${props.article.slug}`}>
+    <Link href={`/blog/[title]`} as={href}>
       <li
+        tabIndex="0"
+        onKeyPress={handleKeypress}
+        onClick={() => handleClick()}
+        aria-label={data.title}
         className='blog-entry'
         onMouseEnter={() => {
-          Router.prefetch(`/blog/${props.article.slug}`);
+          router.prefetch(href);
           console.log("prefetching...");
         }}
       >
@@ -27,26 +43,34 @@ const BlogEntry = (props) => {
           </p>
         </div>
         <div className='blog-entry-right'>
-          <Link href={`/blog/[title]`} as={`/blog/${props.article.slug}`}>
+          <Link href={`/blog/[title]`} as={href}>
             <a className='read-more'>Read full article</a>
           </Link>
         </div>
 
         <style jsx>{`
+          .blog-entry-link:hover {
+            text-decoration: none;
+          }
+
           .blog-entry {
             position: relative;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
             padding: 24px;
-            border: 1px solid hsl(193, 30%, 35%);
+            /* border: 1px solid hsl(193, 30%, 35%); */
+            border: 4px solid #FFA5C0;
             border-radius: 12px;
             margin-bottom: 32px;
+
+            transition: all 0.2s ease-in-out;
           }
 
           .blog-entry:hover {
             cursor: pointer;
-            border-color: #000000;
+            border-color: #FF709B;
+            text-decoration: none;
           }
 
           .blog-entry-left {
@@ -94,7 +118,7 @@ const BlogEntry = (props) => {
           @media screen and (min-width: 545px) {
             .blog-entry .blog-entry-title,
             .blog-entry .blog-entry-desc {
-              max-width: 80%;
+              /* max-width: 80%; */
             }
 
             .blog-entry .blog-entry-title {

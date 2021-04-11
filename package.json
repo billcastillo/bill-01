@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "cacheable-response": "^1.6.10",
+    "cacheable-response": "^1.10.2",
     "express": "^4.17.1",
     "fontfaceobserver": "^2.1.0",
     "gray-matter": "^4.0.2",
@@ -19,20 +19,20 @@
     "imagemin-svgo": "^8.0.0",
     "imagemin-webp": "^6.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
-    "lodash": "^4.17.19",
-    "next": "^9.5.4",
+    "lodash": "^4.17.21",
+    "next": "^9.5.5",
     "next-optimized-images": "^2.6.2",
     "node-sass": "^4.14.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-markdown": "^4.0.8",
-    "react-syntax-highlighter": "^10.3.0",
-    "sass": "^1.26.10",
+    "react": "^17.0.2",
+    "react-dom": "^16.14.0",
+    "react-markdown": "^5.0.3",
+    "react-syntax-highlighter": "^15.4.3",
+    "sass": "^1.32.8",
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^6.0.3",
-    "file-loader": "^6.0.0",
-    "raw-loader": "^3.0.0"
+    "copy-webpack-plugin": "^6.4.1",
+    "file-loader": "^6.2.0",
+    "raw-loader": "^3.1.0"
   }
 }
