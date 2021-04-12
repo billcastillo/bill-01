@@ -23,7 +23,7 @@
 
   .blog-meta {
     max-width: $article-max-width;
-    margin: 0 auto;
+    margin: 0 auto 48px auto;
     text-align: left;
   }
 
@@ -40,7 +40,6 @@
     font-size: 1.4rem;
     letter-spacing: 0.05em;
     margin: 2em 0;
-    text-align: center;
   }
 
   .blog-image {

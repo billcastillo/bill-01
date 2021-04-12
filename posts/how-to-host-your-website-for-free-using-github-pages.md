@@ -85,7 +85,7 @@ Open your favorite terminal app. For windows, you can use Windows Powershell or 
 
 Run the following command (replace username with your username).
 
-```shell
+```git
 git clone https://github.com/username/username.github.io.git
 ```
 
@@ -93,7 +93,7 @@ This will create a folder with the same name as your repository. The folder shou
 
 Change the terminal directory so you're inside that folder.
 
-```shell
+```powershell
 cd username.github.io
 ```
 
@@ -106,13 +106,13 @@ Go ahead and create and add all the files you want to add to your website. The o
 For now, all your files are not yet officially in your repo.
 Run the `git status` command.
 
-```shell
+```git
 git status
 ```
 
 This will list all the files added or changed.
 
-```shell
+```powershell
 C:\Documents\Github\billcasbie.github.io> git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -128,7 +128,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Add all files using:
 
-```shell
+```git
 git add .
 ```
 

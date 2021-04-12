@@ -56,7 +56,7 @@ const Home = (props) => (
       </Container>
     </section>
 
-    <Blog posts={props.posts} noNavigation={true} import={true} />
+    <Blog posts={props.posts} noNavigation={true} import={true} bg="none" />
     {/* <Work projects={projects} noNavigation={true} import={true} /> */}
     <Contact />
 
@@ -82,11 +82,11 @@ const Home = (props) => (
       }
 
       .index-section .title {
-        color: #FF5050;
+        color: #ff5050;
         font-size: 18px;
         margin-bottom: 8px;
         text-transform: uppercase;
-        letter-spacing: 0.050em;
+        letter-spacing: 0.05em;
         text-align: left;
       }
 

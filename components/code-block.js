@@ -5,6 +5,7 @@ import js from "react-syntax-highlighter/dist/cjs/languages/prism/javascript";
 import jsx from "react-syntax-highlighter/dist/cjs/languages/prism/jsx";
 import powershell from "react-syntax-highlighter/dist/cjs/languages/prism/powershell";
 import css from "react-syntax-highlighter/dist/cjs/languages/prism/css";
+import git from "react-syntax-highlighter/dist/cjs/languages/prism/git";
 // import { darcula } from "react-syntax-highlighter/dist/styles/prism";
 import { materialOceanic } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
@@ -12,6 +13,7 @@ SyntaxHighlighter.registerLanguage("javascript", js);
 SyntaxHighlighter.registerLanguage("jsx", jsx);
 SyntaxHighlighter.registerLanguage("powershell", powershell);
 SyntaxHighlighter.registerLanguage("css", css);
+SyntaxHighlighter.registerLanguage("git", git);
 
 class CodeBlock extends PureComponent {
   static propTypes = {

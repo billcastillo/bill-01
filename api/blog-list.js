@@ -14,6 +14,7 @@ const BlogList = () => {
       const value = values[index];
       // Parse document
       const document = matter(value.default);
+
       return {
         document,
         slug,
