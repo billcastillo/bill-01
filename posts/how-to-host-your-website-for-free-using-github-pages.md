@@ -18,7 +18,7 @@ Check "Initialize this repository with a README"
 
 ![Create a new repository][step-1]
 
-## <a name="2"></a> Adding files
+## Adding files
 
 There are two ways to create/add files to your repo: Github GUI or via command line. In this section, we'll utilize the GUI. Alternatively, you can skip this section and go to [Adding files via command line](#adding-files-via-command-line).
 
@@ -60,7 +60,7 @@ Next, scroll down at the bottom and add a commit message. Commit messages should
 
 </div>
 
-## <a name="adding-files-via-command-line"></a> Adding files via command line using Git (Alternative)
+## Adding files via command line using Git (Alternative)
 
 If you've already added files via Github's GUI, you can skip this section and go to [Setting up custom domain](#4) section.
 
@@ -85,7 +85,7 @@ Open your favorite terminal app. For windows, you can use Windows Powershell or 
 
 Run the following command (replace username with your username).
 
-```git
+```shell
 git clone https://github.com/username/username.github.io.git
 ```
 
@@ -93,7 +93,7 @@ This will create a folder with the same name as your repository. The folder shou
 
 Change the terminal directory so you're inside that folder.
 
-```powershell
+```shell
 cd username.github.io
 ```
 
@@ -106,13 +106,13 @@ Go ahead and create and add all the files you want to add to your website. The o
 For now, all your files are not yet officially in your repo.
 Run the `git status` command.
 
-```git
+```shell
 git status
 ```
 
 This will list all the files added or changed.
 
-```powershell
+```shell
 C:\Documents\Github\billcasbie.github.io> git status
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -128,7 +128,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Add all files using:
 
-```git
+```shell
 git add .
 ```
 
@@ -186,7 +186,7 @@ Visit **<username.github.io\>** to see your site.
 
 ---
 
-## <a name="4"></a> Setting up a custom domain (Optional)
+## Setting up a custom domain (Optional)
 
 To set up a custom domain, you have to own one or purchase it on a domain provider. I use [Namecheap](https://namecheap.com) to manage my domains. There are many providers out there, just make sure they are ICANN-accredited.
 

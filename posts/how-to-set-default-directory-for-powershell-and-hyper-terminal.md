@@ -5,20 +5,21 @@ author: Bill Castillo
 description: ez steps
 ---
 
+## Set default location in powershell
+
 To set a default directory you need to **create a new profile**. Open Powershell as administrator and type the command below:
 
 ```powershell
 New-Item -path $profile -type file –force
 ```
 
-Once created, let's edit your profile configurations. This should open a blank notepad.
-Run this command every time you want to edit your profile configs.
+Once created, let's edit your profile configurations. Run the command below. This should open a blank notepad.
 
 ```powershell
 Notepad $profile
 ```
 
-![Editing powershell profile in notepad][powershell-notepad]
+Run this command every time you want to edit your profile configs.
 
 To **add the default directory**, add the line below in the notepad:
 
@@ -26,13 +27,15 @@ To **add the default directory**, add the line below in the notepad:
 Set-location C:\Documents\Projects
 ```
 
-Restart Powershell and you should the have a new default directory.
+![Editing powershell profile in notepad][powershell-notepad]
+
+Save then restart Powershell. You should have the new default directory.
 
 ---
 
 ## Configuring Hyper Terminal default directory
 
-It's important to note that [Hyper](https://hyper.is/) is a just terminal like [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701). It only takes input and the underlying shell is the one that executes the commands. If you're using Windows 10, you probably already have `bash` as the default shell.
+It's important to note that [Hyper](https://hyper.is/) is just a [computer terminal](https://en.wikipedia.org/wiki/Computer_terminal) like [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701). It only takes input and the underlying shell is the one that executes the commands. If you're using Windows 10, you probably have `bash` as the default shell.
 
 We need to change your default shell for your Hyper app to Powershell.
 

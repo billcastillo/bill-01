@@ -194,10 +194,15 @@ h1 {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
     Helvetica, sans-serif;
 }
+
 .domine {
   font-family: "Domine", -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
     Helvetica, sans-serif;
   font-weight: 400;
+}
+
+.font-mono {
+  font-family: $font-mono;
 }
 
 .section {
