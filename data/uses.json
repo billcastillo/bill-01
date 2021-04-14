@@ -16,7 +16,12 @@
         "item": "Terminal",
         "name": "Hyper",
         "description": "To be honest, there are better terminals out there but this one has a pikachu theme."
-      }
+      },
+      {
+        "item": "Mock-ups",
+        "name": "Figma",
+        "description": "If I thought of a layout or concept, I will spend hours doing it directly on HTML and CSS-only to scrap it because I don't like it. Thankful I found Figma."
+      },
     ]
   },
   {
@@ -27,11 +32,6 @@
         "item": "Hosting",
         "name": "zeit.co",
         "description": "I used to host everyting on Github but I really like zeit's ssr, auto deploy stuff. I might move to netlify in the future."
-      },
-      {
-        "item": "Mock-ups",
-        "name": "Figma",
-        "description": "If I thought of a layout or concept, I will spend hours doing it directly on HTML and CSS-only to scrap it because I don't like it. Thankful I found Figma."
       },
       {
         "item": "Domain",

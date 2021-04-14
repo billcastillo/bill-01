@@ -43,7 +43,7 @@ class CodeBlock extends PureComponent {
     return (
       <div className="blog-code-container">
         <div className="blog-code-lang font-mono" aria-label="Document language">{getProperLangValues(language)}</div>
-        <SyntaxHighlighter language={language} style={materialOceanic}>
+        <SyntaxHighlighter language={language} style={materialOceanic} showLineNumbers={true} codeTagProps={{className: 'blog-code'}}>
           {value}
         </SyntaxHighlighter>
 
@@ -54,16 +54,17 @@ class CodeBlock extends PureComponent {
           }
           .blog-code-lang {
             position: absolute;
-            top: -24px;
+            top: -12px;
             right: 15px;
             width: auto;
             height: auto;
-            font-size: 16px;
+            font-size: 14px;
             padding: 8px 12px;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
-            color: #9ca8b4;
+            color: rgb(195, 206, 227);
             background-color: rgb(38, 50, 56);
+            z-index: 2;
           }
 
           @media screen and (min-width: 545px) {

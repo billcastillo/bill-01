@@ -39,7 +39,6 @@ const HeadingRenderer = (props) => {
   return React.createElement("h" + props.level, { id: slug }, props.children);
 };
 
-
 class BlogPost extends React.Component {
   constructor(props) {
     super(props);
