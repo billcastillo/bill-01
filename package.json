@@ -8,6 +8,7 @@
     "export": "npm run build && next export"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.5",
     "@zeit/next-sass": "^1.0.1",
     "cacheable-response": "^1.10.2",
     "express": "^4.17.1",
