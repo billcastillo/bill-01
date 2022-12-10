@@ -11,7 +11,7 @@
     "@vercel/analytics": "^0.1.5",
     "@zeit/next-sass": "^1.0.1",
     "cacheable-response": "^1.10.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fontfaceobserver": "^2.1.0",
     "gray-matter": "^4.0.2",
     "imagemin": "^7.0.1",
